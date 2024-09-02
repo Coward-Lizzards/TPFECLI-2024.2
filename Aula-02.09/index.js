@@ -1,21 +1,24 @@
-const tentativas = 0
-
-numAleatorio = Math.random()
-const ganhou = 0
+function randomNum(inicio,fim){
+    return Math.random(inicio,fim)
+}
 
 function checkNum(param1,param2){
-    if param1 = param2{
-        console.log("Você venceu") 
-        ganhou ++  
-    }else if param1 > param2{
-        console.log("seu número foi mais alto")
-    }else if param1 < param2{
-        console.log("seu número foi menor")
+    if (param1 < param2){
+        return "seu número foi menor"
+    } else if (param1 > param2){
+        return "seu número foi maior"
+    } else{
+        return "Venceu"
     }
 }
 
-while (tentativas <= 5){
-    const userGuess = prompt("insira um numero")
-    console.log(checkNum(userGuess,numAleatorio))
+let tentativas = 0
+let userGuess = prompt("insira um numero")
+let randomNumero = randomNum(0,1024)
+let ganhou = checkNum(userGuess,randomNumero)
 
+
+while (tentativas < 10 && ganhou === "Venceu"){
+    tentativas ++
+    
 }
