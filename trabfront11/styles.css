@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .task-form, .task-list, .filters {
+    margin-bottom: 20px;
+  }
+  
+  .task-form input, .task-form select, .task-form button {
+    margin-right: 10px;
+  }
+  
+  .task-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .notification {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
