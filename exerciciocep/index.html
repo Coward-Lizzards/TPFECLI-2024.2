@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Endereço</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Formulário de Endereço</h1>
+  <form id="endereco-form">
+    <label for="cep">CEP:</label>
+    <input type="text" id="cep" placeholder="Digite o CEP (apenas números)" maxlength="8" required>
+    <div id="error" class="error"></div>
+
+    <label for="logradouro">Logradouro:</label>
+    <input type="text" id="logradouro" readonly>
+
+    <label for="complemento">Complemento:</label>
+    <input type="text" id="complemento">
+
+    <label for="bairro">Bairro:</label>
+    <input type="text" id="bairro" readonly>
+
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" readonly>
+
+    <label for="estado">Estado:</label>
+    <input type="text" id="estado" readonly>
+
+    <button type="submit">Enviar</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
